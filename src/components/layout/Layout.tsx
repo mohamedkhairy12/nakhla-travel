@@ -1,0 +1,17 @@
+import { Container } from "@/components/ui";
+import Footer from "./Footer";
+import Header from "./Header";
+import WhatsApp from "./WhatsApp";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+    return <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 relative">
+            <Container>
+                {children}
+                <WhatsApp />
+            </Container>
+        </main>
+        <Footer />
+    </div>;
+}

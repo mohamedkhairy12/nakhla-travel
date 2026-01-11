@@ -1,0 +1,5 @@
+{
+  "welcome": "Welcome to our Landing Page",
+  "change_language": "Change Language",
+  "current_language": "Current Language: {{lang}}"
+}
