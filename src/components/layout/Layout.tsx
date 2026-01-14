@@ -1,4 +1,3 @@
-import { Container } from "@/components/ui";
 import Footer from "./Footer";
 import Header from "./Header";
 import WhatsApp from "./WhatsApp";
@@ -9,6 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <main className="flex-1 relative">
             {children}
             <WhatsApp />
+
         </main>
         <Footer />
     </div>

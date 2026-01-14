@@ -15,9 +15,9 @@ const WhatsApp = () => {
             href={whatsappURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute bottom-100 right-4 inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl transition"
+            className="fixed bottom-6 right-6 w-14 h-14 flex items-center justify-center bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-200"
         >
-            <img src="/icon/burger.svg" className="w-5 h-5" />
+            <img src="/icon/WhatsApp.svg" className="w-7 h-7" />
         </a>
 
     );

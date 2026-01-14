@@ -1,12 +1,13 @@
-import { useTranslation } from "react-i18next";
+"use client";
+import { useTranslation } from 'next-i18next';
 
 const Hero = () => {
-    const { t, i18n } = useTranslation("common");
+    const { t } = useTranslation("common");
 
     return (
-        <div>
+        <section>
             <h1>{t("welcome")}</h1>
-        </div>
+        </section>
     );
 };
 
