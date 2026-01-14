@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Layout } from "@/components/layout";
+import Hero from "@/sections/hero";
 
 export default function Home() {
-  const { t, i18n } = useTranslation("common");
 
   return (
     <>
@@ -15,7 +14,7 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Layout>
-        {t("welcome")}
+        <Hero />
       </Layout>
     </>
   );

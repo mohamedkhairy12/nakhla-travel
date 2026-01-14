@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
 import Flag from './flag';
+import Locales from './locales';
 
 type DropdownProps = {
     label?: string;
@@ -14,9 +15,8 @@ const LanguageSwitcher = ({ label = 'EN', onSelect }: DropdownProps) => {
     const ref = useRef<HTMLDivElement>(null);
 
     const router = useRouter();
-    const { locales, locale, pathname, query, asPath } = router;
+    const { locales, locale } = router;
 
-    // Close on outside click
     useEffect(() => {
         const handler = (e: MouseEvent) => {
             if (!ref.current?.contains(e.target as Node)) {
@@ -28,7 +28,7 @@ const LanguageSwitcher = ({ label = 'EN', onSelect }: DropdownProps) => {
     }, []);
 
     return (
-        <div ref={ref} className="relative inline-block text-left cursor-pointer">
+        <div ref={ref} className="md:relative hidden md:block md:text-left md:cursor-pointer ">
             {/* Toggel Menu */}
             <div
                 onClick={() => setOpen(prev => !prev)}
@@ -43,18 +43,7 @@ const LanguageSwitcher = ({ label = 'EN', onSelect }: DropdownProps) => {
             {open && (
                 <div className="absolute right-0 mt-2 w-30 rounded-md bg-white shadow-lg flex flex-col text-foreground space-y-2 p-x-2 z-50">
                     {locales?.map(locale => (
-                        <Link
-                            onClick={() => onSelect?.(locale)}
-                            key={locale}
-                            href={{ pathname, query }}
-                            locale={locale}
-                            as={asPath}
-                            legacyBehavior={false}
-                            className='flex items-center space-x-1 hover:bg-primary-600 hover:text-background hover:rounded-md px-2 py-1  '
-                        >
-                            <Flag locale={locale} />
-                            {locale?.toUpperCase()}
-                        </Link>
+                        <Locales onSelect={onSelect} locale={locale} />
                     ))}
                 </div>
             )}
