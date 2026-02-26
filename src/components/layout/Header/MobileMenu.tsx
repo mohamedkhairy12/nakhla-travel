@@ -1,7 +1,7 @@
+import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { routes } from "./constants";
 import { useEffect, useRef } from "react";
-import LanguageSwitcher from "./LanguageSwitcher";
 import Locales from "./locales";
 import { useRouter } from "next/router";
 
@@ -12,6 +12,7 @@ const MobileMenu = ({
     open: boolean;
     setOpen: (open: boolean) => void;
 }) => {
+    const { t } = useTranslation("common");
     const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -62,7 +63,7 @@ const MobileMenu = ({
                             key={route.name}
                             className="px-2 py-1 transition-opacity duration-200 hover:opacity-70"
                         >
-                            <Link href={route.href}>{route.name}</Link>
+                            <Link href={route.href}>{t(`nav.${route.name.toLowerCase()}`)}</Link>
                         </li>
                     ))}
                 </ul>

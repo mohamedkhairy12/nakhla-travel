@@ -1,5 +1,34 @@
 {
   "welcome": "Welcome to our Landing Page",
   "change_language": "Change Language",
-  "current_language": "Current Language: {{lang}}"
+  "current_language": "Current Language: {{lang}}",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "service": "service",
+    "contact": "contact"
+  },
+  "hero": {
+    "subtitle": "Designed To Inspire!",
+    "title": "Concierge Travel Designed Around You"
+  },
+  "intro": {
+    "title": "Intimate. Astounding. Wonder-filled and wildly fun.",
+    "description": "Our widely traveled and well-connected team of experts will personalize your experience from beginning to end."
+  },
+  "about": {
+    "title": "Take Off on Your Own Custom-Crafted Journey",
+    "description": "Work with your own personal travel advisor to craft a customized journey.",
+    "button": "Our Services"
+  },
+  "cta": {
+    "title": "Take Off on Your Trip of a Lifetime",
+    "button": "Time To Take Off"
+  },
+  "footer": {
+    "tagline": "Your trusted travel partner",
+    "contact": "Contact",
+    "follow_us": "Follow Us",
+    "rights": "© 2026 Nakhla Travel. All rights reserved."
+  }
 }

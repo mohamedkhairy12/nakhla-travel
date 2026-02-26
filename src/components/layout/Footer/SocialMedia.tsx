@@ -1,8 +1,8 @@
-"use client";
-
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 const SocialMedia = () => {
+    const { t } = useTranslation("common");
     const socialMedia = [
         { name: "Facebook", icon: "/social-media/facebook.png", link: "https://www.facebook.com/nakhla.travel" },
         { name: "Instagram", icon: "/social-media/instagram.png", link: "https://www.instagram.com/nakhla.travel" },
@@ -11,7 +11,7 @@ const SocialMedia = () => {
     ];
     return (
         <div>
-            <h4 className="font-semibold mb-3">Follow Us</h4>
+            <h4 className="font-semibold mb-3">{t("footer.follow_us")}</h4>
             <ul className="space-y-2 text-sm">
                 {socialMedia.map((social) => (
                     <li key={social.name} className="flex items-center space-x-2 mb-4 cursor-pointer hover:opacity-70 transition-opacity duration-200">

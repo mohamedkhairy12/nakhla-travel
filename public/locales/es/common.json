@@ -1,5 +1,34 @@
 {
   "welcome": "Bienvenido a nuestra página de destino",
   "change_language": "Cambiar idioma",
-  "current_language": "Idioma actual: {{lang}}"
+  "current_language": "Idioma actual: {{lang}}",
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "service": "servicio",
+    "contact": "contacto"
+  },
+  "hero": {
+    "subtitle": "¡Diseñado para Inspirar!",
+    "title": "Viajes de Conserjería Diseñados Alrededor de Ti"
+  },
+  "intro": {
+    "title": "Íntimo. Asombroso. Lleno de maravillas y muy divertido.",
+    "description": "Nuestro equipo de expertos, con amplia experiencia y excelentes conexiones, personalizaremos su experiencia de principio a fin."
+  },
+  "about": {
+    "title": "Despegue en su propio viaje personalizado",
+    "description": "Trabaje con su propio asesor de viajes personal para diseñar un viaje a medida.",
+    "button": "Nuestros Servicios"
+  },
+  "cta": {
+    "title": "Despegue en el viaje de su vida",
+    "button": "Tiempo de despegar"
+  },
+  "footer": {
+    "tagline": "Su socio de viajes de confianza",
+    "contact": "Contacto",
+    "follow_us": "Síguenos",
+    "rights": "© 2026 Nakhla Travel. Todos los derechos reservados."
+  }
 }

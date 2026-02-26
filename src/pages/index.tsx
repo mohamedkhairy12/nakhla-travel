@@ -2,6 +2,9 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Layout } from "@/components/layout";
 import Hero from "@/sections/hero";
+import Intro from "@/sections/Intro";
+import About from "@/sections/About";
+import CTA from "@/sections/CTA";
 
 export default function Home() {
 
@@ -15,6 +18,11 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <div className="relative z-10 bg-white">
+          <Intro />
+          <About />
+        </div>
+        <CTA />
       </Layout>
     </>
   );

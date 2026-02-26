@@ -1,5 +1,34 @@
 {
   "welcome": "Bem-vindo à nossa Landing Page",
   "change_language": "Mudar idioma",
-  "current_language": "Idioma atual: {{lang}}"
+  "current_language": "Idioma atual: {{lang}}",
+  "nav": {
+    "home": "Home",
+    "about": "Sobre",
+    "service": "serviço",
+    "contact": "contato"
+  },
+  "hero": {
+    "subtitle": "Projetado para Inspirar!",
+    "title": "Viagens de Concierge Projetadas para Você"
+  },
+  "intro": {
+    "title": "Íntimo. Surpreendente. Cheio de maravilhas e muito divertido.",
+    "description": "Nossa equipe de especialistas amplamente viajada e bem conectada personalizará sua experiência do início ao fim."
+  },
+  "about": {
+    "title": "Decole em sua própria jornada personalizada",
+    "description": "Trabalhe com seu próprio consultor de viagens pessoal para criar uma jornada personalizada.",
+    "button": "Nossos Serviços"
+  },
+  "cta": {
+    "title": "Decole na viagem da sua vida",
+    "button": "Hora de decolar"
+  },
+  "footer": {
+    "tagline": "Seu parceiro de viagens de confiança",
+    "contact": "Contato",
+    "follow_us": "Siga-nos",
+    "rights": "© 2026 Nakhla Travel. Todos os direitos reservados."
+  }
 }
