@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     const { locale } = useRouter();
     const lang = useMemo(() => locale, [locale]);
     return (
-        <header className="shadow-md sticky top-0 z-50 bg-primary-500 h-[80px] flex items-center text-background relative">
+        <header className="absolute top-0 z-50 h-[80px] w-[100%] flex items-center">
             <Container>
                 <div className="flex justify-between items-center">
                     <Logo />

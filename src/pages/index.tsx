@@ -5,6 +5,7 @@ import Hero from "@/sections/hero";
 import Intro from "@/sections/Intro";
 import About from "@/sections/About";
 import CTA from "@/sections/CTA";
+import Reviews from "@/sections/Reviews/Reviews";
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
           <About />
         </div>
         <CTA />
+        <Reviews />
       </Layout>
     </>
   );

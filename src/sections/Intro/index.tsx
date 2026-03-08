@@ -4,7 +4,7 @@ export default function Intro() {
     const { t } = useTranslation("common");
 
     return (
-        <section className="h-[50vh] bg-[rgba(232,227,218,1)]">
+        <section className="h-[50vh] bg-[#ceebd2]">
             <div className="flex flex-col items-center justify-center h-full">
 
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
