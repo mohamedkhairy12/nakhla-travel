@@ -11,12 +11,12 @@ const SocialMedia = () => {
     ];
     return (
         <div>
-            <h4 className="font-semibold mb-3">{t("footer.follow_us")}</h4>
+            <h4 className="font-semibold mb-3 text-white/80">{t("footer.follow_us")}</h4>
             <ul className="space-y-2 text-sm">
                 {socialMedia.map((social) => (
-                    <li key={social.name} className="flex items-center space-x-2 mb-4 cursor-pointer hover:opacity-70 transition-opacity duration-200">
+                    <li key={social.name} className="flex items-center space-x-2 mb-4 cursor-pointer hover:opacity-70 transition-opacity duration-200 text-white/80">
                         <Image src={social.icon} alt={social.name} width={20} height={20} />
-                        <a href={social.link} target="_blank" rel="noopener noreferrer">{social.name}</a>
+                        <a href={social.link} target="_blank" rel="noopener noreferrer" className="text-white/80">{social.name}</a>
                     </li>
                 ))}
             </ul>

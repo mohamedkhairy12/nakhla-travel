@@ -28,22 +28,20 @@ const LanguageSwitcher = ({ label = 'EN', onSelect }: DropdownProps) => {
     }, []);
 
     return (
-        <div ref={ref} className="md:relative hidden md:block md:text-left md:cursor-pointer ">
-            {/* Toggel Menu */}
+        <div ref={ref} className="md:relative hidden md:flex md:text-left md:cursor-pointer">
             <div
                 onClick={() => setOpen(prev => !prev)}
                 className="flex items-center space-x-1"
             >
                 <Flag locale={locale} />
-                <span>{label.toUpperCase()}</span>
-                <Image src="/icon/arrowDown.svg" alt="arrowDown" width={10} height={10} className={`transition ${open ? 'rotate-180' : ''}`} />
+                <span className='font-bold font-oxygen text-lg'>{label.toUpperCase()}</span>
+                <Image src="/icon/arrowDown.svg" alt="arrowDown" width={15} height={15} className={`transition ${open ? 'rotate-180' : ''}`} />
             </div>
 
-            {/* Menu */}
             {open && (
-                <div className="absolute right-0 mt-2 w-30 rounded-md bg-white shadow-lg flex flex-col text-foreground space-y-2 p-x-2 z-50">
+                <div className="absolute right-0 top-full mt-2 w-30 rounded-md bg-white shadow-lg flex flex-col text-foreground space-y-2 p-x-2 z-50">
                     {locales?.map(locale => (
-                        <Locales onSelect={onSelect} locale={locale} />
+                        <Locales onSelect={() => setOpen(false)} locale={locale} />
                     ))}
                 </div>
             )}

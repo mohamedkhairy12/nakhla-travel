@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
             <ul className="flex gap-8">
                 {routes.map((route) => (
                     <li key={route.name} className='hover:opacity-70 transition-opacity duration-200'>
-                        <Link href={route.href}>{t(`nav.${route.name.toLowerCase()}`)}</Link>
+                        <Link style={{ fontSize: '20px' }} href={route.href}>{t(`nav.${route.name.toLowerCase()}`)}</Link>
                     </li>
                 ))}
             </ul>

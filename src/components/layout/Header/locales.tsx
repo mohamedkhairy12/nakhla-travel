@@ -19,7 +19,7 @@ const Locales = ({ onSelect, locale }: LocalesProps) => {
             locale={locale}
             as={asPath}
             legacyBehavior={false}
-            className='flex items-center space-x-1 hover:bg-primary-600 hover:text-background hover:rounded-md px-2 py-1  '
+            className='flex items-center space-x-1 hover:bg-primary-600 hover:text-background hover:rounded-md md:text-lg text-base px-2 py-1'
         >
             <Flag locale={locale} />
             {locale?.toUpperCase()}

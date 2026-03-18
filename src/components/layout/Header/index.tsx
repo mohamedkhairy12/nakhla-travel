@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     const { locale } = useRouter();
     const lang = useMemo(() => locale, [locale]);
     return (
-        <header className="absolute top-0 z-50 h-[80px] w-[100%] flex items-center">
+        <header className="absolute top-0 z-50 h-[80px] w-[100%] flex items-center bg-primary-500 text-white/80">
             <Container>
                 <div className="flex justify-between items-center">
                     <Logo />
@@ -23,7 +23,6 @@ const Header: React.FC = () => {
                         <Navbar />
                         <LanguageSwitcher
                             label={lang}
-                            onSelect={(value) => console.log(value)}
                         />
                         <div className='md:hidden flex transition-transform duration-200 '>
                             <Image src={'/icon/burger.svg'} alt="menu" width={20} height={20} onClick={() => setOpen(prev => !prev)} />

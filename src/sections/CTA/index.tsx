@@ -21,7 +21,7 @@ export default function CTA() {
 
                     <Link
                         href="/contact"
-                        className="inline-block bg-[rgba(23,38,68,1)] text-white px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all"
+                        className="inline-block bg-[rgba(23,38,68,1)] text-white/80 px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all"
                     >
                         {t("cta.button")}
                     </Link>

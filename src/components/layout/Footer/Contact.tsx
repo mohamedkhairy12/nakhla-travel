@@ -11,10 +11,10 @@ const Contact = () => {
     ];
     return (
         <div>
-            <h4 className="font-semibold mb-3">{t("footer.contact")}</h4>
+            <h4 className="font-semibold mb-3 text-white/80">{t("footer.contact")}</h4>
             <ul className="space-y-2 text-sm">
                 {contact.map((item) => (
-                    <li key={item.value} className="flex items-center mb-4">{item.icon} {item.value}</li>
+                    <li key={item.value} className="flex items-center mb-4 text-white/80">{item.icon} {item.value}</li>
                 ))}
             </ul>
         </div>

@@ -20,7 +20,10 @@ const config: Config = {
         foreground: "#243e28",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        sans: ["var(--font-oxygen)", "Inter", "system-ui", "sans-serif"],
+        kaisei: ["var(--font-kaisei)", "serif"],
+        oxygen: ["var(--font-oxygen)", "sans-serif"],
+        belluga: ["var(--font-bellota)", "cursive"],
       },
     },
   },

@@ -14,7 +14,7 @@ const Footer = () => {
                     {/* Brand */}
                     <div>
                         <Logo />
-                        <p className="mt-2 text-sm">
+                        <p className="mt-2 text-sm text-white/80 ">
                             {t("footer.tagline")}
                         </p>
                     </div>

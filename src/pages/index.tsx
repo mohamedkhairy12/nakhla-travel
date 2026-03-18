@@ -5,6 +5,8 @@ import Intro from "@/sections/Intro";
 import About from "@/sections/About";
 import CTA from "@/sections/CTA";
 import Reviews from "@/sections/Reviews/Reviews";
+import Contact from "@/components/layout/Footer/Contact";
+import ContactUS from "@/sections/ContactUS";
 
 export default function Home() {
 
@@ -13,12 +15,14 @@ export default function Home() {
       <SEO />
       <Layout>
         <Hero />
-        <div className="relative z-10 bg-white">
-          <Intro />
-          <About />
-        </div>
+        <About />
+        <ContactUS />
         <CTA />
-        <Reviews />
+        {/*<Reviews /> */}
+        {/* <div className="relative z-10 bg-white">
+          <Intro />
+        </div>
+        */}
       </Layout>
     </>
   );
