@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
         <About />
         <ContactUS />
-        <CTA />
+        {/* <CTA /> */}
         {/*<Reviews /> */}
         {/* <div className="relative z-10 bg-white">
           <Intro />
