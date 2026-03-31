@@ -1,12 +1,10 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Layout, SEO } from "@/components/layout";
 import Hero from "@/sections/hero";
-import Intro from "@/sections/Intro";
 import About from "@/sections/About";
-import CTA from "@/sections/CTA";
 import Reviews from "@/sections/Reviews/Reviews";
-import Contact from "@/components/layout/Footer/Contact";
 import ContactUS from "@/sections/ContactUS";
+import ServiceSection from "@/sections/Service";
 
 export default function Home() {
 
@@ -16,13 +14,9 @@ export default function Home() {
       <Layout>
         <Hero />
         <About />
+        <ServiceSection />
         <ContactUS />
-        {/* <CTA /> */}
-        {/*<Reviews /> */}
-        {/* <div className="relative z-10 bg-white">
-          <Intro />
-        </div>
-        */}
+        <Reviews />
       </Layout>
     </>
   );

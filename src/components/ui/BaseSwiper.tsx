@@ -1,43 +1,35 @@
 import { Swiper } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
+import "swiper/css/effect-fade";
+import { SwiperOptions } from "swiper/types";
 
 interface BaseSwiperProps {
     children: React.ReactNode;
+    delay?: number;
+    slidesPerView?: number;
+    className?: string;
+    allowTouchMove?: boolean;
+    loop?: boolean;
+    autoplay?: boolean;
+    effect?: "fade" | "slide";
+    breakpoints?: any;
 }
-const BaseSwiper = ({ children }: BaseSwiperProps) => {
+const BaseSwiper = ({ children, delay = 5000, slidesPerView = 1, className, allowTouchMove = false, loop = false, autoplay = false, effect = "slide", breakpoints }: BaseSwiperProps) => {
     return (
-        <div className="w-full">
-            <Swiper
-                modules={[Navigation, Pagination]}
-                // navigation
-                a11y={{ enabled: true }}
-                pagination={{ clickable: true }}
-                className="rounded-2xl"
-                spaceBetween={50}
-                slidesPerView={1}
-                slidesPerGroup={1}
-                loop={true}
-                speed={500}
-                effect="fade"
-                keyboard={true}
-                mousewheel={true}
-                scrollbar={true}
-                resistance={true}
-                resistanceRatio={0.5}
-                watchSlidesProgress={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
+        <Swiper
+            modules={[Autoplay, EffectFade]}
+            effect={effect}
+            autoplay={autoplay ? { delay, disableOnInteraction: false } : false}
+            loop={loop}
+            allowTouchMove={allowTouchMove}
+            className={className}
+            slidesPerView={slidesPerView}
+            breakpoints={breakpoints}
 
-            >
-                {children}
-            </Swiper>
-        </div>
+        >
+            {children}
+        </Swiper>
     );
 };
 

@@ -63,7 +63,7 @@ const MobileMenu = ({
                             key={route.name}
                             className="px-2 py-1 transition-opacity duration-200 hover:opacity-70"
                         >
-                            <Link className="text-lg" href={route.href}>{t(`nav.${route.name.toLowerCase()}`)}</Link>
+                            <Link className="text-lg" href={route.href} onClick={() => setOpen(false)}>{t(`nav.${route.name.toLowerCase()}`)}</Link>
                         </li>
                     ))}
                 </ul>

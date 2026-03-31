@@ -6,7 +6,7 @@ export default function About() {
     const { t } = useTranslation("common");
 
     return (
-        <section className="py-12 md:py-20 overflow-hidden">
+        <section className="py-12 md:py-20 overflow-hidden" id="about">
             <div className="w-full max-w-[1100px] mx-auto flex flex-col md:flex-row md:justify-center gap-10 md:gap-16 items-center px-5 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
@@ -25,7 +25,7 @@ export default function About() {
                         Our Philosophy
                     </motion.h2>
 
-                    <div className="text-[rgba(23,38,68,1)] text-left text-sm md:text-base leading-relaxed md:leading-7 space-y-5">
+                    <div className="text-primary-500 text-left text-sm md:text-base leading-relaxed md:leading-7 space-y-5">
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function About() {
                 >
                     <div className="relative w-full h-full ">
                         <Image
-                            src="/images/departure-luxury-travel-planning-18.jpg"
+                            src="/images/departure-luxury-travel-planning-18.png"
                             alt="About Nakhla Travel"
                             fill
                             className="object-cover"
