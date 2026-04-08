@@ -5,8 +5,8 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "service": "service",
-    "contact": "contact"
+    "service": "Service",
+    "contact": "Contact"
   },
   "hero": {
     "subtitle": "Designed To Inspire!",
@@ -24,6 +24,8 @@
     "p3": "Our name is inspired by nature. “Nakhla,” the Arabic word for palm tree, symbolizes life, resilience, and a deep connection to the land. It reflects our love for nature, conscious travel, our belief in responsible and eco-conscious travel and discovering places in a genuine and meaningful way.",
     "p4": "At Nakhla, we go beyond traditional tours. We create tailor-made journeys and private travel experiences, designed around each traveler—their interests, curiosity, and personal way of discovering the world, while always respecting the environments and communities that make these journeys possible."
   },
+  "servicesTitle": "Ways to Experience Egypt",
+  "reviewsTitle": "What Our Travelers Say",
   "servicesList": [
     {
       "title": "Tailor-Made Itineraries",
@@ -41,16 +43,47 @@
       "description": "Explore the Egypt desert, from remote oases to the surreal White Desert, with adventure, silence, and authentic desert camps. Lose yourself in unforgettable nights beneath endless star-filled skies."
     },
     {
-      "title": "Meaningful & Sustainable Travel",
-      "subtitle": "Travel with purpose.",
-      "description": "Experience eco-friendly travel in Egypt designed to support local communities, preserve authenticity, and create deeper, more enriching journeys. Let your travels leave a positive mark while discovering meaningful experiences."
-    },
-    {
       "title": "Red Sea Escapes",
       "subtitle": "Relax, dive, reconnect.",
       "description": "Discover the Red Sea’s crystal-clear waters, perfect for diving, snorkeling, and peaceful stays at carefully selected seaside resorts. Let the waves guide you through Egypt’s most stunning coastal landscapes."
+    },
+    {
+      "title": "Meaningful & Sustainable Travel",
+      "subtitle": "Travel with purpose.",
+      "description": "Experience eco-friendly travel in Egypt designed to support local communities, preserve authenticity, and create deeper, more enriching journeys. Let your travels leave a positive mark while discovering meaningful experiences."
     }
   ],
+  "contactForm": {
+    "title": "Ready to begin planning your next adventure? Contact our explorations team to arrange a discovery conversation",
+    "section1": "Tell us about yourself",
+    "name": "Full Name",
+    "nationality": "Nationality",
+    "email": "Email Address",
+    "phone": "Phone / WhatsApp",
+    "section2": "Your Travel Details",
+    "dates": "Preferred travel dates",
+    "travelers": "Number of travelers",
+    "stay": "Length of stay",
+    "section3": "Your Interests",
+    "inspireText": "Please select the experiences that inspire you:",
+    "expCultural": "Cultural & Historical Exploration",
+    "expNile": "Nile Cruise / Dahabiya",
+    "expDesert": "Desert Experiences",
+    "expRedSea": "Red Sea & Coastal Retreats",
+    "expSpiritual": "Spiritual Journeys",
+    "expFamily": "Family Holidays",
+    "expHoneymoon": "Honeymoon",
+    "section4": "Your Travel Style",
+    "styleLuxury": "Luxury",
+    "styleBoutique": "Boutique",
+    "styleComfort": "Comfort",
+    "section5": "Personalize Your Journey",
+    "specialText": "Tell us what would make this journey truly special for you.",
+    "button": "Enquire Now",
+    "sending": "Sending...",
+    "sent": "Message Sent!",
+    "error": "Failed to send message. Please try again or email us directly."
+  },
   "cta": {
     "title": "Take Off on Your Trip of a Lifetime",
     "button": "Time To Take Off"

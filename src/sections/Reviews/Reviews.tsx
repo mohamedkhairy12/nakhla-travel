@@ -3,8 +3,10 @@ import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import { useWindowSize } from "@/hooks/useWindowSize";
+import { useTranslation } from "next-i18next";
 
 export default function Reviews() {
+    const { t } = useTranslation("common");
 
     const { width } = useWindowSize();
     const sizeScreen = width < 1024 ? 'mobile' : 'desktop';
@@ -30,7 +32,7 @@ export default function Reviews() {
                 className="text-center mb-10"
             >
                 <h2 className="text-3xl md:text-4xl font-bold font-kaisei text-primary-500">
-                    What Our Travelers Say
+                    {t("reviewsTitle")}
                 </h2>
                 <div className="w-20 h-1 bg-[rgba(183,127,79,0.6)] mx-auto mt-4 rounded-full" />
             </motion.div>

@@ -5,8 +5,8 @@
   "nav": {
     "home": "Home",
     "about": "Sobre",
-    "service": "serviço",
-    "contact": "contato"
+    "service": "Serviço",
+    "contact": "Contato"
   },
   "hero": {
     "subtitle": "Projetado para Inspirar!",
@@ -24,6 +24,8 @@
     "p3": "Nosso nome é inspirado na natureza. “Nakhla”, a palavra árabe para palmeira, simboliza vida, resiliência e uma profunda conexão com a terra. Reflete nosso amor pela natureza, nosso compromisso com um turismo responsável e eco-consciente, e nosso desejo de descobrir lugares de forma autêntica e significativa.",
     "p4": "Na Nakhla, vamos além dos passeios tradicionais. Criamos viagens sob medida e experiências privadas, desenhadas em torno de cada viajante — seus interesses, sua curiosidade e sua maneira pessoal de descobrir o mundo — sempre respeitando os ambientes e as comunidades que tornam essas viagens possíveis."
   },
+  "servicesTitle": "Maneiras de Vivenciar o Egito",
+  "reviewsTitle": "O Que Dizem Nossos Viajantes",
   "servicesList": [
     {
       "title": "Roteiros Sob Medida",
@@ -41,16 +43,47 @@
       "description": "Explore o deserto do Egito, desde oásis remotos até o surreal Deserto Branco, com aventura, silêncio e acampamentos autênticos. Perca-se em noites inesquecíveis sob um céu infinito repleto de estrelas."
     },
     {
-      "title": "Viagens com Propósito e Sustentáveis",
-      "subtitle": "Viaje com propósito.",
-      "description": "Viva experiências eco-friendly no Egito, pensadas para apoiar comunidades locais, preservar a autenticidade e proporcionar jornadas mais profundas e enriquecedoras. Deixe uma marca positiva enquanto descobre experiências com significado."
-    },
-    {
       "title": "Escapadas ao Mar Vermelho",
       "subtitle": "Relaxe, mergulhe e reconecte-se.",
       "description": "Descubra as águas cristalinas do Mar Vermelho, perfeitas para mergulho, snorkeling e estadias tranquilas em resorts cuidadosamente selecionados. Deixe as ondas guiarem você pelos cenários costeiros mais deslumbrantes do Egito."
+    },
+    {
+      "title": "Viagens com Propósito e Sustentáveis",
+      "subtitle": "Viaje com propósito.",
+      "description": "Viva experiências eco-friendly no Egito, pensadas para apoiar comunidades locais, preservar a autenticidade e proporcionar jornadas mais profundas e enriquecedoras. Deixe uma marca positiva enquanto descobre experiências com significado."
     }
   ],
+  "contactForm": {
+    "title": "Planeje Sua Viagem",
+    "section1": "Fale-nos sobre você",
+    "name": "Nome completo",
+    "nationality": "Nacionalidade",
+    "email": "E-mail",
+    "phone": "Telefone / WhatsApp",
+    "section2": "Detalhes da sua viagem",
+    "dates": "Datas preferidas de viagem",
+    "travelers": "Número de viajantes",
+    "stay": "Duração da estadia",
+    "section3": "Seus interesses",
+    "inspireText": "Selecione as experiências que mais te inspiram:",
+    "expCultural": "Cultura e História",
+    "expNile": "Cruzeiro pelo Nilo / Dahabiya",
+    "expDesert": "Experiências no deserto",
+    "expRedSea": "Mar Vermelho e escapadas costeiras",
+    "expSpiritual": "Jornadas espirituais",
+    "expFamily": "Viagens em família",
+    "expHoneymoon": "Lua de mel",
+    "section4": "Seu estilo de viagem",
+    "styleLuxury": "Luxo",
+    "styleBoutique": "Boutique",
+    "styleComfort": "Conforto",
+    "section5": "Personalize sua experiência",
+    "specialText": "Conte-nos o que tornaria esta viagem verdadeiramente especial para você.",
+    "button": "Enviar Consulta",
+    "sending": "Enviando...",
+    "sent": "Mensagem Enviada!",
+    "error": "Falha ao enviar mensagem. Tente novamente ou nos envie um e-mail."
+  },
   "cta": {
     "title": "Decole na viagem da sua vida",
     "button": "Hora de decolar"

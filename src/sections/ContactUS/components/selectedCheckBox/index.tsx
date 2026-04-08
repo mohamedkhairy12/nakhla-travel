@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-export default function SelectedCheckBox({ label, name }: { label: string, name: string }) {
+export default function SelectedCheckBox({ label, name, value }: { label: string, name: string, value?: string }) {
     return (
         <motion.label 
             initial={{ opacity: 0, y: 10 }}
@@ -14,8 +14,9 @@ export default function SelectedCheckBox({ label, name }: { label: string, name:
                 <input
                     type="checkbox"
                     name={name}
-                    value={label}
+                    value={value || label}
                     className="peer appearance-none w-5 h-5 border-2 border-white/30 rounded-md checked:bg-white/40 transition-all cursor-pointer"
+
                 />
                 <svg className="absolute w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />

@@ -5,8 +5,8 @@
   "nav": {
     "home": "Inicio",
     "about": "Sobre nosotros",
-    "service": "servicio",
-    "contact": "contacto"
+    "service": "Servicio",
+    "contact": "Contacto"
   },
   "hero": {
     "subtitle": "¡Diseñado para Inspirar!",
@@ -24,6 +24,8 @@
     "p3": "Nuestro nombre está inspirado en la naturaleza. “Nakhla”, la palabra árabe para palmera, simboliza vida, resiliencia y una profunda conexión con la tierra. Refleja nuestro amor por la naturaleza, nuestro compromiso con un turismo responsable y eco-consciente, y nuestro deseo de descubrir los destinos de una manera auténtica y significativa.",
     "p4": "En Nakhla vamos más allá de los tours tradicionales. Creamos viajes a medida y experiencias privadas diseñadas alrededor de cada viajero — sus intereses, su curiosidad y su manera personal de descubrir el mundo — respetando siempre los entornos y las comunidades que hacen posibles estos viajes."
   },
+  "servicesTitle": "Formas de experimentar Egipto",
+  "reviewsTitle": "Lo Que Dicen Nuestros Viajeros",
   "servicesList": [
     {
       "title": "Itinerarios a Medida",
@@ -41,16 +43,47 @@
       "description": "Explora el desierto de Egipto, desde oasis remotos hasta el surrealista Desierto Blanco, con aventura, silencio y campamentos auténticos. Piérdete en noches inolvidables bajo un cielo infinito lleno de estrellas."
     },
     {
-      "title": "Viajes con Propósito y Sostenibles",
-      "subtitle": "Viaja con intención.",
-      "description": "Vive experiencias eco-friendly en Egipto diseñadas para apoyar a las comunidades locales, preservar la autenticidad y crear viajes más profundos y enriquecedores. Deja una huella positiva mientras descubres experiencias con significado."
-    },
-    {
       "title": "Escapadas al Mar Rojo",
       "subtitle": "Relájate, bucea y reconecta.",
       "description": "Descubre las aguas cristalinas del Mar Rojo, ideales para el buceo, snorkel y estancias tranquilas en resorts cuidadosamente seleccionados. Deja que las olas te guíen por los paisajes costeros más impresionantes de Egipto."
+    },
+    {
+      "title": "Viajes con Propósito y Sostenibles",
+      "subtitle": "Viaja con intención.",
+      "description": "Vive experiencias eco-friendly en Egipto diseñadas para apoyar a las comunidades locales, preservar la autenticidad y crear viajes más profundos y enriquecedores. Deja una huella positiva mientras descubres experiencias con significado."
     }
   ],
+  "contactForm": {
+    "title": "¿Listo para empezar a planificar tu próxima aventura? Contacta a nuestro equipo para organizar una conversación.",
+    "section1": "Cuéntanos sobre ti",
+    "name": "Nombre completo",
+    "nationality": "Nacionalidad",
+    "email": "Correo electrónico",
+    "phone": "Teléfono / WhatsApp",
+    "section2": "Detalles de tu viaje",
+    "dates": "Fechas de viaje preferidas",
+    "travelers": "Número de viajeros",
+    "stay": "Duración de la estancia",
+    "section3": "Tus intereses",
+    "inspireText": "Selecciona las experiencias que más te inspiran:",
+    "expCultural": "Cultura e Historia",
+    "expNile": "Crucero por el Nilo / Dahabiya",
+    "expDesert": "Experiencias en el desierto",
+    "expRedSea": "Mar Rojo y escapadas costeras",
+    "expSpiritual": "Viajes espirituales",
+    "expFamily": "Vacaciones en familia",
+    "expHoneymoon": "Luna de miel",
+    "section4": "Tu estilo de viaje",
+    "styleLuxury": "Lujo",
+    "styleBoutique": "Boutique",
+    "styleComfort": "Confort",
+    "section5": "Personaliza tu experiencia",
+    "specialText": "Cuéntanos qué haría que este viaje fuera realmente especial para ti.",
+    "button": "Enviar consulta",
+    "sending": "Enviando...",
+    "sent": "¡Mensaje Enviado!",
+    "error": "Error al enviar el mensaje. Inténtalo de nuevo o envíanos un correo electrónico directamente."
+  },
   "cta": {
     "title": "Despegue en el viaje de su vida",
     "button": "Tiempo de despegar"

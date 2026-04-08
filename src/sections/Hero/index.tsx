@@ -5,7 +5,7 @@ const slides = [
     { desktop: "/hero/desktop/heroDeskTop1.png", mobile: "/hero/mobile/heroMobile1.png" },
     { desktop: "/hero/desktop/heroDeskTop2.png", mobile: "/hero/mobile/heroMobile2.png" },
     { desktop: "/hero/desktop/heroDeskTop3.png", mobile: "/hero/mobile/heroMobile3.png" },
-    { desktop: "/hero/desktop/heroDeskTop5.png", mobile: "/hero/mobile/heroMobile4.png" }
+    { desktop: "/hero/desktop/heroDeskTop4.png", mobile: "/hero/mobile/heroMobile4.png" }
 ];
 
 export default function Hero() {

@@ -7,7 +7,21 @@ export default function ServiceSection() {
     const { t } = useTranslation("common");
 
     return (
+
         <div id="service" className="overflow-hidden bg-white">
+            <div className="pt-24 pb-4 md:pt-32 md:pb-8 text-center px-4">
+                <motion.h2
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="text-3xl md:text-4xl font-bold font-kaisei text-primary-500"
+                >
+                    {t("servicesTitle")}
+                    <div className="w-20 h-1 bg-[rgba(183,127,79,0.6)] mx-auto mt-4 rounded-full" />
+
+                </motion.h2>
+            </div>
             {services.map((service, index) => {
                 const { image, reverse } = service;
                 // Get translated fields
@@ -21,10 +35,12 @@ export default function ServiceSection() {
                 const bgClass = isDark ? "bg-primary-500 text-white" : "bg-white text-primary-500";
                 const borderClass = isDark ? "border-white/10" : "border-primary-500/10";
 
+                const paddingClass = index === 0 ? "pt-12 pb-20 md:pt-16 md:pb-32" : "py-20 md:py-32";
+
                 return (
                     <section
                         key={index}
-                        className={`py-20 md:py-32 px-6 md:px-12 relative ${bgClass}`}
+                        className={`${paddingClass} px-6 md:px-12 relative ${bgClass}`}
                     >
                         <div className="max-w-7xl mx-auto">
                             <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">

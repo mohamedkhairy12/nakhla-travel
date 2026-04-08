@@ -18,6 +18,7 @@ export default async function handler(
 
   const {
     name,
+    nationality,
     email,
     phone,
     travelDates,
@@ -25,6 +26,7 @@ export default async function handler(
     stayLength,
     experiences,
     travelStyle,
+    specialText
   } = req.body;
 
   if (!name || !email) {
@@ -60,13 +62,15 @@ export default async function handler(
       replyTo: email,
       subject: `New Contact Form Inquiry from ${name}`,
       text: `Name: ${name}
+        Nationality: ${nationality || "Not provided"}
         Email: ${email}
         Phone: ${phone || "Not provided"}
         Number of Travelers: ${travelers || "Not provided"}
         Preferred Travel Dates: ${travelDates || "Not provided"}
         Length of Stay: ${stayLength || "Not provided"}
         Experiences: ${experiencesText}
-        Travel Style: ${travelStyleText}`,
+        Travel Style: ${travelStyleText}
+        Special Requests: ${specialText || "Not provided"}`,
     };
 
     await transporter.sendMail(mailOptions);
