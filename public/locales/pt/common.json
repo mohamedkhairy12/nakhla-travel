@@ -17,10 +17,40 @@
     "description": "Nossa equipe de especialistas amplamente viajada e bem conectada personalizará sua experiência do início ao fim."
   },
   "about": {
-    "title": "Decole em sua própria jornada personalizada",
-    "description": "Trabalhe com seu próprio consultor de viagens pessoal para criar uma jornada personalizada.",
-    "button": "Nossos Serviços"
+    "title": "Nossa Filosofia",
+    "p1": "Para nós, a natureza nunca foi apenas um destino. É um lugar onde tudo desacelera — onde nos reconectamos conosco mesmos e redescobrimos um senso de equilíbrio. No silêncio do deserto, ao longo do fluxo eterno do Nilo e sob um céu aberto e infinito, chega um momento em que a viagem se transforma em algo mais profundo: um retorno a si mesmo.",
+    "quote": "Acreditamos que viajar pode ser profundamente restaurador — uma experiência tranquila, quase terapêutica, que permite às pessoas parar, respirar e reconectar-se com o que realmente importa.",
+    "p2": "Essa filosofia sempre esteve no coração de quem somos. Muito antes de nos tornarmos uma empresa de viagens, éramos viajantes — exploradores curiosos atraídos pelas paisagens e pelos cantos escondidos do Egito. Com mais de dez anos de experiência na indústria do turismo, aprendemos que as viagens memoráveis nunca são apenas itinerários, mas experiências cuidadosamente criadas em torno de cada viajante.",
+    "p3": "Nosso nome é inspirado na natureza. “Nakhla”, a palavra árabe para palmeira, simboliza vida, resiliência e uma profunda conexão com a terra. Reflete nosso amor pela natureza, nosso compromisso com um turismo responsável e eco-consciente, e nosso desejo de descobrir lugares de forma autêntica e significativa.",
+    "p4": "Na Nakhla, vamos além dos passeios tradicionais. Criamos viagens sob medida e experiências privadas, desenhadas em torno de cada viajante — seus interesses, sua curiosidade e sua maneira pessoal de descobrir o mundo — sempre respeitando os ambientes e as comunidades que tornam essas viagens possíveis."
   },
+  "servicesList": [
+    {
+      "title": "Roteiros Sob Medida",
+      "subtitle": "O seu Egito, do seu jeito.",
+      "description": "Descubra viagens personalizadas de acordo com os seus interesses, curiosidade e estilo — desde explorações culturais e jornadas espirituais até férias em família e roteiros clássicos pelo Egito. Viva uma experiência única, onde cada momento é pessoal e inesquecível."
+    },
+    {
+      "title": "Cruzeiros no Nilo & Dahabiyas Boutique",
+      "subtitle": "Navegue o Nilo com elegância.",
+      "description": "Desfrute de uma das formas mais intemporais de conhecer o Egito a bordo de cruzeiros de luxo cinco estrelas ou exclusivas Dahabiyas boutique, visitando templos antigos e paisagens deslumbrantes. Deixe o rio conduzi-lo pela história, onde cada capítulo desta civilização ganha vida ao seu redor."
+    },
+    {
+      "title": "Experiências no Deserto",
+      "subtitle": "Aventura sob as estrelas.",
+      "description": "Explore o deserto do Egito, desde oásis remotos até o surreal Deserto Branco, com aventura, silêncio e acampamentos autênticos. Perca-se em noites inesquecíveis sob um céu infinito repleto de estrelas."
+    },
+    {
+      "title": "Viagens com Propósito e Sustentáveis",
+      "subtitle": "Viaje com propósito.",
+      "description": "Viva experiências eco-friendly no Egito, pensadas para apoiar comunidades locais, preservar a autenticidade e proporcionar jornadas mais profundas e enriquecedoras. Deixe uma marca positiva enquanto descobre experiências com significado."
+    },
+    {
+      "title": "Escapadas ao Mar Vermelho",
+      "subtitle": "Relaxe, mergulhe e reconecte-se.",
+      "description": "Descubra as águas cristalinas do Mar Vermelho, perfeitas para mergulho, snorkeling e estadias tranquilas em resorts cuidadosamente selecionados. Deixe as ondas guiarem você pelos cenários costeiros mais deslumbrantes do Egito."
+    }
+  ],
   "cta": {
     "title": "Decole na viagem da sua vida",
     "button": "Hora de decolar"

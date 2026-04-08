@@ -31,6 +31,7 @@ export const services: ServiceSectionProps[] = [
     image: ["/services/Desert Experiences1.png"],
     reverse: false,
   },
+
   {
     title: "Meaningful & Sustainable Travel",
     subtitle: "Travel with purpose.",

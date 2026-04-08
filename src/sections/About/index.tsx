@@ -3,17 +3,18 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function About() {
-    const { t } = useTranslation("common");
+    const { t } = useTranslation('common');
+
 
     return (
         <section className="py-12 md:py-20 overflow-hidden" id="about">
-            <div className="w-full max-w-[1100px] mx-auto flex flex-col md:flex-row md:justify-center gap-10 md:gap-16 items-center px-5 md:px-6">
+            <div className="w-full  mx-auto flex flex-col md:flex-row md:justify-center gap-10 md:gap-16 items-center px-5 md:px-6">
                 <motion.div
                     initial={{ opacity: 0, x: -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
-                    className="w-full md:max-w-[480px]"
+                    className="w-full md:max-w-[850px]"
                 >
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -22,7 +23,7 @@ export default function About() {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-2xl md:text-4xl font-bold mb-6 text-left font-kaisei"
                     >
-                        Our Philosophy
+                        {t('about.title')}
                     </motion.h2>
 
                     <div className="text-primary-500 text-left text-sm md:text-base leading-relaxed md:leading-7 space-y-5">
@@ -32,7 +33,7 @@ export default function About() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            Nature, for us, has never been just a destination. It is a place where everything slows down — where we reconnect with ourselves and rediscover a sense of balance. In the silence of the desert, along the timeless flow of the Nile, and beneath an endless open sky, there comes a moment when the journey becomes something deeper: a return to oneself.
+                            {t('about.p1')}
                         </motion.p>
 
                         <motion.p
@@ -42,7 +43,7 @@ export default function About() {
                             transition={{ duration: 0.5, delay: 0.35 }}
                             className="text-lg md:text-xl text-[rgba(183,127,79,1)] font-belluga italic border-l-4 border-[rgba(183,127,79,0.4)] pl-4"
                         >
-                            We believe that travel can be deeply restorative—a quiet, therapeutic experience that allows people to pause, breathe, and reconnect with what truly matters.
+                            {t('about.quote')}
                         </motion.p>
 
                         <motion.p
@@ -51,7 +52,25 @@ export default function About() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.5 }}
                         >
-                            This philosophy has always been at the heart of who we are. Long before becoming a travel company, we were travelers ourselves—curious explorers drawn to the landscapes and hidden corners of Egypt. With more than ten years of experience in the travel industry, we learned that memorable journeys are never just itineraries, but carefully crafted experiences designed around each traveler.
+                            {t('about.p2')}
+                        </motion.p>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.65 }}
+                        >
+                            {t('about.p3')}
+                        </motion.p>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.8 }}
+                        >
+                            {t('about.p4')}
                         </motion.p>
                     </div>
                 </motion.div>

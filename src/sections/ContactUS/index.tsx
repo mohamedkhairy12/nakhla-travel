@@ -82,7 +82,7 @@ export default function ContactUs() {
 
     return (
         <BackGroundImage image="/images/category_weekend-main_banner-ar-dt_2.jpg" opacity={0.8}>
-            <section className="flex flex-col items-center backdrop-blur-sm w-[70%] py-4 rounded-2xl overflow-hidden" id="contact">
+            <section className="flex flex-col items-center backdrop-blur-lg w-[70%] py-4 rounded-2xl overflow-hidden" id="contact">
                 <motion.h3
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}

@@ -17,10 +17,40 @@
     "description": "Nuestro equipo de expertos, con amplia experiencia y excelentes conexiones, personalizaremos su experiencia de principio a fin."
   },
   "about": {
-    "title": "Despegue en su propio viaje personalizado",
-    "description": "Trabaje con su propio asesor de viajes personal para diseñar un viaje a medida.",
-    "button": "Nuestros Servicios"
+    "title": "Nuestra Filosofía",
+    "p1": "Para nosotros, la naturaleza nunca ha sido simplemente un destino. Es un lugar donde todo se desacelera, donde podemos reconectar con nosotros mismos y redescubrir un sentido de equilibrio. En el silencio del desierto, a lo largo del eterno fluir del Nilo y bajo un cielo abierto e infinito, llega un momento en el que el viaje se transforma en algo más profundo: un regreso a uno mismo.",
+    "quote": "Creemos que viajar puede ser profundamente reparador: una experiencia tranquila, casi terapéutica, que permite a las personas detenerse, respirar y reconectar con lo que realmente importa.",
+    "p2": "Esta filosofía siempre ha estado en el corazón de lo que somos. Mucho antes de convertirnos en una empresa de viajes, éramos viajeros — exploradores curiosos atraídos por los paisajes y los rincones escondidos de Egipto. Con más de diez años de experiencia en la industria del turismo, aprendimos que los viajes memorables nunca son solo itinerarios, sino experiencias cuidadosamente diseñadas en torno a cada viajero.",
+    "p3": "Nuestro nombre está inspirado en la naturaleza. “Nakhla”, la palabra árabe para palmera, simboliza vida, resiliencia y una profunda conexión con la tierra. Refleja nuestro amor por la naturaleza, nuestro compromiso con un turismo responsable y eco-consciente, y nuestro deseo de descubrir los destinos de una manera auténtica y significativa.",
+    "p4": "En Nakhla vamos más allá de los tours tradicionales. Creamos viajes a medida y experiencias privadas diseñadas alrededor de cada viajero — sus intereses, su curiosidad y su manera personal de descubrir el mundo — respetando siempre los entornos y las comunidades que hacen posibles estos viajes."
   },
+  "servicesList": [
+    {
+      "title": "Itinerarios a Medida",
+      "subtitle": "Tu Egipto, a tu manera.",
+      "description": "Descubre viajes diseñados según tus intereses, curiosidad y estilo, desde exploraciones culturales y viajes espirituales hasta vacaciones familiares y rutas clásicas por Egipto. Vive tu propio viaje, donde cada experiencia se siente personal e inolvidable."
+    },
+    {
+      "title": "Cruceros por el Nilo & Dahabiyas Boutique",
+      "subtitle": "Navega el Nilo con elegancia.",
+      "description": "Disfruta una de las formas más atemporales de descubrir Egipto a bordo de cruceros de lujo cinco estrellas o exclusivas Dahabiyas boutique, visitando templos antiguos y paisajes impresionantes. Deja que el río te lleve a través de la historia, donde cada relato de esta civilización cobra vida a tu alrededor."
+    },
+    {
+      "title": "Experiencias en el Desierto",
+      "subtitle": "Aventura bajo las estrellas.",
+      "description": "Explora el desierto de Egipto, desde oasis remotos hasta el surrealista Desierto Blanco, con aventura, silencio y campamentos auténticos. Piérdete en noches inolvidables bajo un cielo infinito lleno de estrellas."
+    },
+    {
+      "title": "Viajes con Propósito y Sostenibles",
+      "subtitle": "Viaja con intención.",
+      "description": "Vive experiencias eco-friendly en Egipto diseñadas para apoyar a las comunidades locales, preservar la autenticidad y crear viajes más profundos y enriquecedores. Deja una huella positiva mientras descubres experiencias con significado."
+    },
+    {
+      "title": "Escapadas al Mar Rojo",
+      "subtitle": "Relájate, bucea y reconecta.",
+      "description": "Descubre las aguas cristalinas del Mar Rojo, ideales para el buceo, snorkel y estancias tranquilas en resorts cuidadosamente seleccionados. Deja que las olas te guíen por los paisajes costeros más impresionantes de Egipto."
+    }
+  ],
   "cta": {
     "title": "Despegue en el viaje de su vida",
     "button": "Tiempo de despegar"

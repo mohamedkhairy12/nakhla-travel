@@ -1,14 +1,23 @@
 import { services } from "@/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export default function ServiceSection() {
+    const { t } = useTranslation("common");
+
     return (
         <div id="service" className="overflow-hidden bg-white">
             {services.map((service, index) => {
-                const { title, subtitle, description, image, reverse } = service;
+                const { image, reverse } = service;
+                // Get translated fields
+                const title = t(`servicesList.${index}.title`);
+                const subtitle = t(`servicesList.${index}.subtitle`);
+                const description = t(`servicesList.${index}.description`);
+
                 const isReverse = reverse !== undefined ? reverse : index % 2 !== 0;
-                const isDark = title === "Tailor-Made Itineraries" || title === "Red Sea Escapes";
+                // Use the english title equivalent or index to check for dark mode
+                const isDark = index === 0 || index === 4;
                 const bgClass = isDark ? "bg-primary-500 text-white" : "bg-white text-primary-500";
                 const borderClass = isDark ? "border-white/10" : "border-primary-500/10";
 
@@ -49,15 +58,6 @@ export default function ServiceSection() {
                                         {description}
                                     </p>
 
-                                    <motion.button
-                                        whileHover={{ x: 5 }}
-                                        className={`flex items-center gap-2 font-medium tracking-wide uppercase text-sm ${isDark ? 'text-white' : 'text-primary-500'}`}
-                                    >
-                                        Discovery Conversation
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.16663 10H15.8333M15.8333 10L10.8333 5M15.8333 10L10.8333 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </motion.button>
                                 </motion.div>
 
                                 {/* Image Column */}
@@ -69,7 +69,7 @@ export default function ServiceSection() {
                                     className={`relative ${isReverse ? 'md:order-1' : 'md:order-2'}`}
                                 >
                                     {/* Main Image */}
-                                    <div className={`aspect-[4/5] rounded-[2rem] overflow-hidden border ${borderClass} shadow-2xl relative z-10`}>
+                                    <div className={`aspect-[5/4] rounded-[2rem] overflow-hidden border ${borderClass} shadow-2xl relative z-10`}>
                                         <Image
                                             src={image[0]}
                                             alt={title}
@@ -85,7 +85,7 @@ export default function ServiceSection() {
                                             whileInView={{ opacity: 1, x: 0, y: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: 0.4, duration: 0.8 }}
-                                            className={`absolute -bottom-10 ${isReverse ? '-right-6 md:-right-12' : '-left-6 md:-left-12'} w-1/2 aspect-square rounded-2xl overflow-hidden border-4 ${isDark ? 'border-primary-500' : 'border-white'} shadow-2xl z-20 hidden md:block`}
+                                            className={`absolute -bottom-25 ${isReverse ? '-right-6 md:-right-12' : '-left-2 md:-left-12'} w-[300px] aspect-square rounded-2xl overflow-hidden border-4 ${isDark ? 'border-primary-500' : 'border-white'} shadow-2xl z-20 hidden md:block`}
                                         >
                                             <Image
                                                 src={image[1]}

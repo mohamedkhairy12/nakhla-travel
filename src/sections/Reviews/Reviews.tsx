@@ -2,14 +2,18 @@ import BaseSwiper from "@/components/ui/BaseSwiper";
 import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 export default function Reviews() {
+
+    const { width } = useWindowSize();
+    const sizeScreen = width < 1024 ? 'mobile' : 'desktop';
     const reviews = [
-        { src: "/reviews/review1.png" },
-        { src: "/reviews/review2.png" },
-        { src: "/reviews/review3.png" },
-        { src: "/reviews/review4.png" },
-        { src: "/reviews/review5.png" }
+        { src: `/reviews/${sizeScreen}/review1.png` },
+        { src: `/reviews/${sizeScreen}/review2.png` },
+        { src: `/reviews/${sizeScreen}/review3.png` },
+        { src: `/reviews/${sizeScreen}/review4.png` },
+        { src: `/reviews/${sizeScreen}/review5.png` }
     ];
 
     const breakpoints = {

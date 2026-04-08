@@ -5,7 +5,7 @@ const slides = [
     { desktop: "/hero/desktop/heroDeskTop1.png", mobile: "/hero/mobile/heroMobile1.png" },
     { desktop: "/hero/desktop/heroDeskTop2.png", mobile: "/hero/mobile/heroMobile2.png" },
     { desktop: "/hero/desktop/heroDeskTop3.png", mobile: "/hero/mobile/heroMobile3.png" },
-    { desktop: "/hero/desktop/heroDeskTop4.png", mobile: "/hero/mobile/heroMobile4.png" }
+    { desktop: "/hero/desktop/heroDeskTop5.png", mobile: "/hero/mobile/heroMobile4.png" }
 ];
 
 export default function Hero() {
@@ -30,7 +30,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative h-[98dvh]" style={{ clipPath: 'inset(0 0 0 0)' }} id="home">
+        <section className="relative h-[100dvh]" style={{ clipPath: 'inset(0 0 0 0)' }} id="home">
             <div className="fixed top-0 left-0 w-full h-full z-0">
                 <ResponsiveBackgroundSlider slides={slides} />
             </div>

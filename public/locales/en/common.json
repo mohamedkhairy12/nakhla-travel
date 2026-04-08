@@ -17,10 +17,40 @@
     "description": "Our widely traveled and well-connected team of experts will personalize your experience from beginning to end."
   },
   "about": {
-    "title": "Take Off on Your Own Custom-Crafted Journey",
-    "description": "Work with your own personal travel advisor to craft a customized journey.",
-    "button": "Our Services"
+    "title": "Our Philosophy",
+    "p1": "Nature, for us, has never been just a destination. It is a place where everything slows down — where we reconnect with ourselves and rediscover a sense of balance. In the silence of the desert, along the timeless flow of the Nile, and beneath an endless open sky, there comes a moment when the journey becomes something deeper: a return to oneself.",
+    "quote": "We believe that travel can be deeply restorative—a quiet, therapeutic experience that allows people to pause, breathe, and reconnect with what truly matters.",
+    "p2": "This philosophy has always been at the heart of who we are. Long before becoming a travel company, we were travelers ourselves—curious explorers drawn to the landscapes and hidden corners of Egypt. With more than ten years of experience in the travel industry, we learned that memorable journeys are never just itineraries, but carefully crafted experiences designed around each traveler.",
+    "p3": "Our name is inspired by nature. “Nakhla,” the Arabic word for palm tree, symbolizes life, resilience, and a deep connection to the land. It reflects our love for nature, conscious travel, our belief in responsible and eco-conscious travel and discovering places in a genuine and meaningful way.",
+    "p4": "At Nakhla, we go beyond traditional tours. We create tailor-made journeys and private travel experiences, designed around each traveler—their interests, curiosity, and personal way of discovering the world, while always respecting the environments and communities that make these journeys possible."
   },
+  "servicesList": [
+    {
+      "title": "Tailor-Made Itineraries",
+      "subtitle": "Your Egypt, your way.",
+      "description": "Discover custom travel packages shaped by your interests, curiosity, and style, from cultural explorations and spiritual journeys to family holidays and classic routes across Egypt. Step into your own journey, where every experience feels personal and unforgettable."
+    },
+    {
+      "title": "Nile Cruises & Boutique Dahabiyas",
+      "subtitle": "Sail the Nile in luxury.",
+      "description": "Experience one of the most timeless ways to see Egypt aboard elegant five-star cruises or boutique Dahabiyas, visiting ancient temples and breathtaking landscapes. Let the river carry you through history, where every story of this civilization unfolds around you."
+    },
+    {
+      "title": "Desert Experiences",
+      "subtitle": "Adventure under the stars.",
+      "description": "Explore the Egypt desert, from remote oases to the surreal White Desert, with adventure, silence, and authentic desert camps. Lose yourself in unforgettable nights beneath endless star-filled skies."
+    },
+    {
+      "title": "Meaningful & Sustainable Travel",
+      "subtitle": "Travel with purpose.",
+      "description": "Experience eco-friendly travel in Egypt designed to support local communities, preserve authenticity, and create deeper, more enriching journeys. Let your travels leave a positive mark while discovering meaningful experiences."
+    },
+    {
+      "title": "Red Sea Escapes",
+      "subtitle": "Relax, dive, reconnect.",
+      "description": "Discover the Red Sea’s crystal-clear waters, perfect for diving, snorkeling, and peaceful stays at carefully selected seaside resorts. Let the waves guide you through Egypt’s most stunning coastal landscapes."
+    }
+  ],
   "cta": {
     "title": "Take Off on Your Trip of a Lifetime",
     "button": "Time To Take Off"
