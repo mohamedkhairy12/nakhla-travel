@@ -11,11 +11,11 @@ export default function Reviews() {
     const { width } = useWindowSize();
     const sizeScreen = width < 1024 ? 'mobile' : 'desktop';
     const reviews = [
-        { src: `/reviews/${sizeScreen}/review1.png` },
-        { src: `/reviews/${sizeScreen}/review2.png` },
-        { src: `/reviews/${sizeScreen}/review3.png` },
-        { src: `/reviews/${sizeScreen}/review4.png` },
-        { src: `/reviews/${sizeScreen}/review5.png` }
+        { src: `/reviews/desktop/review1.png` },
+        { src: `/reviews/desktop/review2.png` },
+        { src: `/reviews/desktop/review3.png` },
+        { src: `/reviews/desktop/review4.png` },
+        { src: `/reviews/desktop/review5.png` }
     ];
 
     const breakpoints = {
@@ -43,7 +43,7 @@ export default function Reviews() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
             >
-                <BaseSwiper allowTouchMove={true} autoplay={true} loop={true} delay={5000} breakpoints={breakpoints} effect="slide" slidesPerView={1} >
+                <BaseSwiper allowTouchMove={true} autoplay={true} loop={true} delay={2000} breakpoints={breakpoints} effect="slide" slidesPerView={1} >
                     {reviews.map((review, index) => (
                         <SwiperSlide key={index}>
                             <motion.div
@@ -56,7 +56,7 @@ export default function Reviews() {
                                     alt={`review${index + 1}`}
                                     width={300}
                                     height={300}
-                                    className="rounded-lg md:w-[600px] md:h-[600px] w-[300px] h-[300px] shadow-sm hover:shadow-md transition-shadow duration-300"
+                                    className="rounded-lg md:w-[600px] md:h-[600px] w-full h-full shadow-sm hover:shadow-md transition-shadow duration-300"
                                 />
                             </motion.div>
                         </SwiperSlide>
