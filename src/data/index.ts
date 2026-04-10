@@ -1,22 +1,22 @@
 import { ServiceSectionProps } from "@/types/index.type";
 
 export const services: ServiceSectionProps[] = [
-  {
-    title: "Tailor-Made Itineraries",
-    subtitle: "Your Egypt, your way.",
-    description:
-      "Discover custom travel packages shaped by your interests, curiosity, and style, from cultural explorations and spiritual journeys to family holidays and classic routes across Egypt. Step into your own journey, where every experience feels personal and unforgettable.",
-    image: ["/services/Tailor-Made Itineraries1.png"],
-    reverse: false,
-  },
-  {
-    title: "Nile Cruises & Boutique Dahabiyas",
-    subtitle: "Sail the Nile in luxury.",
-    description:
-      "Experience one of the most timeless ways to see Egypt aboard elegant five-star cruises or boutique Dahabiyas, visiting ancient temples and breathtaking landscapes. Let the river carry you through history, where every story of this civilization unfolds around you.",
-    image: ["/services/nilecruise.jpeg"],
-    reverse: true,
-  },
+  // {
+  //   title: "Tailor-Made Itineraries",
+  //   subtitle: "Your Egypt, your way.",
+  //   description:
+  //     "Discover custom travel packages shaped by your interests, curiosity, and style, from cultural explorations and spiritual journeys to family holidays and classic routes across Egypt. Step into your own journey, where every experience feels personal and unforgettable.",
+  //   image: ["/services/Tailor-Made Itineraries1.png"],
+  //   reverse: false,
+  // },
+  // {
+  //   title: "Nile Cruises & Boutique Dahabiyas",
+  //   subtitle: "Sail the Nile in luxury.",
+  //   description:
+  //     "Experience one of the most timeless ways to see Egypt aboard elegant five-star cruises or boutique Dahabiyas, visiting ancient temples and breathtaking landscapes. Let the river carry you through history, where every story of this civilization unfolds around you.",
+  //   image: ["/services/nilecruise.jpeg"],
+  //   reverse: true,
+  // },
   {
     title: "Wellness Programs",
     subtitle: "A return, refined.",
