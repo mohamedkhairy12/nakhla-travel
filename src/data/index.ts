@@ -19,20 +19,19 @@ export const services: ServiceSectionProps[] = [
   },
   {
     title: "Wellness Programs",
-    subtitle: "Adventure under the stars.",
-    description:
-      "Explore the Egypt desert, from remote oases to the surreal White Desert, with adventure, silence, and authentic desert camps. Lose yourself in unforgettable nights beneath endless star-filled skies.",
+    subtitle: "A return, refined.",
+    description: "",
     image: ["/services/Wellness1.png", "/services/Wellness2.png"],
     reverse: false,
   },
-  {
-    title: "Desert Experiences",
-    subtitle: "Adventure under the stars.",
-    description:
-      "Explore the Egypt desert, from remote oases to the surreal White Desert, with adventure, silence, and authentic desert camps. Lose yourself in unforgettable nights beneath endless star-filled skies.",
-    image: ["/services/Desert Experiences1.png"],
-    reverse: true,
-  },
+  // {
+  //   title: "Desert Experiences",
+  //   subtitle: "Adventure under the stars.",
+  //   description:
+  //     "Explore the Egypt desert, from remote oases to the surreal White Desert, with adventure, silence, and authentic desert camps. Lose yourself in unforgettable nights beneath endless star-filled skies.",
+  //   image: ["/services/Desert Experiences1.png"],
+  //   reverse: true,
+  // },
   {
     title: "Meaningful & Sustainable Travel",
     subtitle: "Travel with purpose.",
