@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ResponsiveBackgroundSlider } from "@/components/ui";
+import { useTranslation } from "next-i18next";
 
 const slides = [
     { desktop: "/hero/desktop/heroDeskTop1.png", mobile: "/hero/mobile/heroMobile1.png" },
@@ -9,6 +10,8 @@ const slides = [
 ];
 
 export default function Hero() {
+    const { t } = useTranslation("common");
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -46,14 +49,14 @@ export default function Hero() {
                         variants={itemVariants}
                         className="text-primary-500 text-base md:text-xl font-medium tracking-[0.3em] uppercase mb-6 opacity-90 font-sans"
                     >
-                        Nakhla Travel
+                        {t("hero.subtitle")}
                     </motion.h3>
 
                     <motion.h1
                         variants={itemVariants}
                         className="text-primary-500 text-4xl md:text-5xl font-bold leading-tight font-kaisei"
                     >
-                        Where Luxury meets nature
+                        {t("hero.title")}
                     </motion.h1>
 
                     <motion.div
