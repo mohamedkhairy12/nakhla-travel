@@ -70,7 +70,7 @@ export default function ServiceSection() {
 
                                     <div className={`w-20 h-1 bg-[#b77f4f]/60 rounded-full`} />
 
-                                    <p className={`text-base md:text-lg leading-relaxed ${isDark ? 'text-white/80' : 'text-[rgba(23,38,68,0.8)]'}`}>
+                                    <p className={`text-base md:text-lg leading-relaxed whitespace-pre-line ${isDark ? 'text-white/80' : 'text-[rgba(23,38,68,0.8)]'}`}>
                                         {description}
                                     </p>
 
