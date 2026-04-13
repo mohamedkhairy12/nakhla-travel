@@ -32,7 +32,7 @@ export const SEO = ({ page = "home", title, description, keywords }: SEOProps) =
         "@type": "TravelAgency",
         "name": "Nakhla Travel",
         "url": "https://www.nakhlatravel.com",
-        "logo": "https://www.nakhlatravel.com/logo/Green Logo Nakhla.svg",
+        "logo": "https://www.nakhlatravel.com/logo/iconTap.svg",
         "description": seoDescription,
         "address": {
             "@type": "PostalAddress",
@@ -68,7 +68,7 @@ export const SEO = ({ page = "home", title, description, keywords }: SEOProps) =
             <meta property="og:title" content={seoTitle} />
             <meta property="og:description" content={seoDescription} />
             <meta property="og:site_name" content="Nakhla Travel" />
-            <meta property="og:image" content="https://www.nakhlatravel.com/logo/Green Logo Nakhla.svg" />
+            <meta property="og:image" content="https://www.nakhlatravel.com/logo/iconTap.svg" />
             <meta property="og:image:type" content="image/svg+xml" />
 
             {/* Twitter */}
@@ -76,7 +76,7 @@ export const SEO = ({ page = "home", title, description, keywords }: SEOProps) =
             <meta property="twitter:url" content={currentUrl} />
             <meta property="twitter:title" content={seoTitle} />
             <meta property="twitter:description" content={seoDescription} />
-            <meta property="twitter:image" content="https://www.nakhlatravel.com/logo/Green Logo Nakhla.svg" />
+            <meta property="twitter:image" content="https://www.nakhlatravel.com/logo/iconTap.svg" />
 
             {/* Canonical URL */}
             <link rel="canonical" href={currentUrl} />
