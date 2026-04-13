@@ -4,10 +4,10 @@ import Image from "next/image";
 const SocialMedia = () => {
     const { t } = useTranslation("common");
     const socialMedia = [
-        { name: "Facebook", icon: "/social-media/facebook.png", link: "https://www.facebook.com/nakhla.travel" },
-        { name: "Instagram", icon: "/social-media/instagram.png", link: "https://www.instagram.com/nakhla.travel" },
-        { name: "Twitter", icon: "/social-media/twitter.png", link: "https://twitter.com/nakhla_travel" },
-        { name: "LinkedIn", icon: "/social-media/linkedin.png", link: "https://www.linkedin.com/company/nakhla-travel/" },
+        { name: "whatsapp", icon: "/icon/WhatsApp.svg", link: "https://wa.me/201289666170" },
+        { name: "Instagram", icon: "/social-media/instagram.png", link: "https://www.instagram.com/nakhlatravel2?igsh=dTFucm9meTMxOWp1&utm_source=qr" },
+        // { name: "Twitter", icon: "/social-media/twitter.png", link: "https://twitter.com/nakhla_travel" },
+        { name: "LinkedIn", icon: "/social-media/linkedin.png", link: "https://www.linkedin.com/company/nakhla-travel-egypt/" },
     ];
     return (
         <div>

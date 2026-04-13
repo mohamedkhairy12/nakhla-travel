@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const WhatsApp = () => {
     const { locale } = useRouter();
@@ -7,7 +8,7 @@ const WhatsApp = () => {
         en: "Hello, I would like to know more about your services",
         es: "Hola, quiero saber más sobre sus servicios",
         pt: "Olá, gostaria de saber mais sobre seus serviços",
-    } as any;
+    } as Record<string, string>;
     const whatsappURL = `https://wa.me/201289666170?text=${encodeURIComponent(
         messages[locale as string] || messages.en
     )}`;
@@ -23,7 +24,7 @@ const WhatsApp = () => {
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-50 w-14 h-14 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-2xl transition-colors hover:bg-[#20ba5a]"
         >
-            <img src="/icon/WhatsApp.svg" className="w-7 h-7" alt="WhatsApp" />
+            <Image src="/icon/WhatsApp.svg" className="w-7 h-7" alt="WhatsApp" />
         </motion.a>
     );
 };
