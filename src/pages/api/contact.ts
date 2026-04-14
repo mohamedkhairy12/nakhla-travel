@@ -49,7 +49,7 @@ export default async function handler(
         : "None selected";
 
     await resend.emails.send({
-      from: "Nakhla Travel <onboarding@resend.dev>",
+      from: "Nakhla Travel <noreply@nakhlatravel.com>",
       to: "sales@nakhlatravel.com",
       replyTo: email,
       subject: `New Contact Form Inquiry from ${name}`,
