@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 type Data = {
   message?: string;
@@ -36,15 +36,7 @@ export default async function handler(
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: true,
-      auth: {
-        user: process.env.SMTP_USER || "sales@nakhlatravel.com",
-        pass: process.env.SMTP_PASS || "jqcvlcdpkzmxsybg",
-      },
-    });
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     const experiencesText =
       Array.isArray(experiences) && experiences.length > 0
@@ -56,32 +48,30 @@ export default async function handler(
         ? travelStyle.join(", ")
         : "None selected";
 
-    const mailOptions = {
-      from: email,
+    await resend.emails.send({
+      from: "Nakhla Travel <onboarding@resend.dev>",
       to: "sales@nakhlatravel.com",
       replyTo: email,
       subject: `New Contact Form Inquiry from ${name}`,
       text: `Name: ${name}
-        Nationality: ${nationality || "Not provided"}
-        Email: ${email}
-        Phone: ${phone || "Not provided"}
-        Number of Travelers: ${travelers || "Not provided"}
-        Preferred Travel Dates: ${travelDates || "Not provided"}
-        Length of Stay: ${stayLength || "Not provided"}
-        Experiences: ${experiencesText}
-        Travel Style: ${travelStyleText}
-        Special Requests: ${specialText || "Not provided"}`,
-    };
-
-    await transporter.sendMail(mailOptions);
+Nationality: ${nationality || "Not provided"}
+Email: ${email}
+Phone: ${phone || "Not provided"}
+Number of Travelers: ${travelers || "Not provided"}
+Preferred Travel Dates: ${travelDates || "Not provided"}
+Length of Stay: ${stayLength || "Not provided"}
+Experiences: ${experiencesText}
+Travel Style: ${travelStyleText}
+Special Requests: ${specialText || "Not provided"}`,
+    });
 
     return res
       .status(200)
       .json({ success: true, message: "Email sent successfully!" });
-  } catch (error) {
-    console.error("Error sending email:", error);
+  } catch (error: any) {
+    console.error("Error sending email:", error?.message || error);
     return res
       .status(500)
-      .json({ success: false, message: "Error sending email" });
+      .json({ success: false, message: `Error sending email: ${error?.message || "Unknown error"}` });
   }
 }

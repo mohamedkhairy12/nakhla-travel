@@ -35,7 +35,7 @@ export default function ContactUs() {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
             });
-            if (res.statusText === "OK") {
+            if (res.ok) {
                 setStatus("success");
                 setCustomLabel(t("contactForm.sent"));
                 form.reset();
